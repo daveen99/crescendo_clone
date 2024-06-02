@@ -44,7 +44,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "aws s3 sync ./build s3://cresendo.site --profile=react-admin"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "homepage": "https://daveen99.github.io/crescendo_clone/"
   },
   "eslintConfig": {
     "extends": [
