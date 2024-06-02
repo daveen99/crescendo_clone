@@ -1,0 +1,115 @@
+
+@keyframes modalAnimation {
+  0% {
+    top: 100%;
+  }
+  70% {
+    top: 30%;
+  }
+  100% {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.login-modal-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 200;
+  font-family: "Noto Sans KR", sans-serif;
+
+  .login-modal-content {
+    background-color: #ffffff;
+    width: 500px;
+    height: 470px;
+    padding: 15px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    animation: modalAnimation 0.4s ease-in-out forwards;
+
+    .loginModalCloseBtn {
+      margin-left: auto;
+      border: 0;
+      background: #ffffff;
+      cursor: pointer;
+      font-size: 20px;
+      transition-duration: 0.2s;
+
+      &:hover {
+        color: red;
+      }
+    }
+    .login-modal-title {
+      font-family: 'SBAggroB', Serif;
+      margin-bottom: 20px;
+    }
+
+    .login-input-form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .input-account,
+      .input-password {
+        width: 314px;
+        height: 40px;
+        padding-left: 10px;
+        font-family: "Noto Sans KR", sans-serif;
+        border: 1px solid #8d8e91;
+        border-radius: 5px;
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+    }
+
+
+
+    .autoLoginContainer {
+      width: 314px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+
+      .pwfindSpan {
+        cursor: pointer;
+        color: #3556d5;
+        transition-duration: 0.2s;
+
+        &:hover {
+          color: #2944a8;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .registerContainer {
+      margin: 20px 0;
+      .registerSpan {
+        cursor: pointer;
+        color: #3556d5;
+        transition-duration: 0.2s;
+
+        &:hover {
+          color: #2944a8;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+
+}

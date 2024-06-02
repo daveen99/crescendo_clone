@@ -1,0 +1,157 @@
+.board-detail-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  //padding-top: 10px;
+  //padding-bottom: 10px;
+  //padding-right: 50px;
+  margin-top: 20px;
+
+  .head {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    //z-index: 1;
+  }
+
+  // 종료 버튼
+  .detail-header {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    .close {
+      font-size: 40px;
+    }
+  }
+
+  // 제목 컨테이너
+  .detail-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // 곡명
+    .subTitle {
+      font-size: 20px;
+
+    }
+
+    // 보드 게시판 타이틀
+    .mainTitle {
+      font-size: 25px;
+      font-weight: bold;
+      margin: 0 100px -30px auto;
+    }
+  }
+
+  .document-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .document {
+
+
+      .document-pdf {
+        //height: 500px;
+        border-radius: 30px;
+        overflow: hidden;
+        margin-bottom: 10px;
+
+      }
+    }
+  }
+
+
+  .detail-side {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    width: 100px;
+    height: 600px;
+    background: #ffffff;
+    font-size: 60px;
+    border-radius: 30px;
+
+    .return-btn {
+      margin-bottom: 15px;
+      transition-duration: 0.2s;
+      width: 60px;
+      height: 60px;
+      color: #797979;
+
+      &:hover {
+        color: #000000;
+      }
+    }
+
+    .like-btn {
+      margin-bottom: 15px;
+      transition-duration: 0.2s;
+      color: #9d9d9d;
+      &:hover {
+        color: #dc8b97;
+
+      }
+    }
+
+    .dislike-btn {
+      margin-bottom: 15px;
+      transition-duration: 0.2s;
+      color: #9d9d9d;
+      &:hover {
+        color: #c58bdc;
+      }
+    }
+    .addpl-btn {
+      transition-duration: 0.2s;
+      color: #9d9d9d;
+      &:hover {
+        color: #000000;
+      }
+    }
+
+    .msg-btn {
+      margin-top: auto;
+      color: #bbd9a3;
+      transition-duration: 0.2s;
+
+      &:hover {
+        color: #819670;
+      }
+    }
+
+    .del-btn {
+      margin-top: auto;
+      color: indianred;
+      transition-duration: 0.2s;
+
+      &:hover {
+        color: #9d4747;
+      }
+    }
+    .download-btn {
+      margin-top: 30px;
+      transition-duration: 0.2s;
+      color: #637ad3;
+
+      &:hover {
+        color: #475796;
+      }
+    }
+  }
+}

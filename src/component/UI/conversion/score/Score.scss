@@ -1,0 +1,33 @@
+.document{
+  width: 50%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+
+  .pdfimg {
+    border: 2px black solid;
+    width: 100px !important;
+    border-radius: 30px;
+    overflow: hidden;
+    //margin-top: 1px;
+  }
+  .button-zip {
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    .downBtn {
+      transition-duration: 0.5s;
+      background: green;
+      &:hover {
+        background: #006c00;
+      }
+    }
+  }
+}

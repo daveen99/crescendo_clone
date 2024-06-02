@@ -1,0 +1,21 @@
+
+.inquiry-send-button {
+  width: 96%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+
+  .inq-btn {
+    background: #8eab85;
+    color: white;
+    transition-duration: 0.2s;
+    border: 0;
+    font-weight: bold;
+
+    &:hover {
+      background: #5f7259;
+
+    }
+  }
+}
